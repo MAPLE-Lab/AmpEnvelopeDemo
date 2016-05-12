@@ -16,10 +16,21 @@
           piece.play(); //play selected audio
         }
       }
+      
       var menuControl = function() {
+	      $(".audio").bind("ended", function(){
+                  $('.pauseBut').show();
+                  $('.playBut').hide();
+                  $('.button').removeClass('playing');
+                  $('.button').animate({
+                    opacity: 0.7
+                  }, {
+                    queue: false
+                  }, 300);        
+	      });
         $('.button').click(function() {
           if ($(this).hasClass('playing')) {
-          	$('.pauseBut').show();
+            $('.pauseBut').show();
             $('.playBut').hide();
             $('.button').removeClass('playing');
             $('.button').animate({
