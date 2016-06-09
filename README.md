@@ -1,6 +1,7 @@
 # AmpEnvelopeDemo
 
 Created for the [Maple Lab](https://maplelab.net/) , McMaster University
+
 Written by Kyle Gauder
 
 ![Amplitude Envelope Demo Image](https://github.com/gauderkd/AmpEnvelopeDemo/blob/master/elements/AE_demo.PNG)
