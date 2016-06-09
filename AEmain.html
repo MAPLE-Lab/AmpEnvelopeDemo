@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <script src="http://maplelab.net/virtualPianist/Scripts_2.0_working/jquery-2.2.3.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="AEstylesheet.css">
-    <script src="AEscripts.js"></script>
-    
-  </head>
+<head>
+    <!--Libraries-->
+    <script src="https://maplelab.net/tools/AmpEnvelopeDemo/assets/lib/jquery-2.2.3.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css"
+          href="https://maplelab.net/tools/AmpEnvelopeDemo/assets/css/AEstylesheet.css">
+    <!--Javascript-->
+    <script>
+        var urlPrefix = "https://maplelab.net/tools/AmpEnvelopeDemo/";
+    </script>
+    <script src="https://maplelab.net/tools/AmpEnvelopeDemo/assets/js/AEscripts.js"></script>
 
-  <body>
-          <div id="AmpEnvVisualizer">
-            <div id="AEContent">
-              <div id="AEButtons">
-                <div class="perc percBut button" onclick="play('Perc')">
+</head>
 
-                </div>
-                <div class="flat flatBut button" onclick="play('Flat')">
+<body>
+<div id="AmpEnvVisualizer">
+    <div id="AEContent">
+        <div id="AEButtons">
+            <div class="perc percBut button" onclick="play('Perc')">
 
-                </div>
-                <div class="rev revBut button" onclick="play('Rev')">
+            </div>
+            <div class="flat flatBut button" onclick="play('Flat')">
 
-                </div>
+            </div>
+            <div class="rev revBut button" onclick="play('Rev')">
 
-              </div>
-              <div id="AEDescriptions">
-                <p class="perc percDesc descript">
-                  Percussive Tone
-                </p>
-                <p class="perc percDesc descript2">
+            </div>
+
+        </div>
+        <div id="AEDescriptions">
+            <p class="perc percDesc descript">
+                Percussive Tone
+            </p>
+            <p class="perc percDesc descript2">
                 Percussive envelopes are characterized by an abrupt onset followed by an immediate exponential decay.
-                </p>
-                <p class="flat flatDesc descript">
-                  Flat Tone
-                </p>
-                <p class="flat flatDesc descript2">
+            </p>
+            <p class="flat flatDesc descript">
+                Flat Tone
+            </p>
+            <p class="flat flatDesc descript2">
                 Flat envelopes are characterized by an abrupt onset, an indefinite sustain period and an abrupt offset.
-                </p>
-                <p class="rev revDesc descript">
-                  Reverse Percussive Tone
-                </p>
-                <p class="rev revDesc descript2">
+            </p>
+            <p class="rev revDesc descript">
+                Reverse Percussive Tone
+            </p>
+            <p class="rev revDesc descript2">
                 Reverse envelopes are characterized by an exponential ramp up followed by an abrupt offset.
-                </p>
-              </div>
-            </div>
-            <div id="AETitle">Amplitude Envelope</div>
-            <div id="AEBack"></div>
-            <div id="audioButtonContainer">
-              <div class="pauseBut playPauseBut">
+            </p>
+        </div>
+    </div>
+    <div id="AETitle">Amplitude Envelope</div>
+    <div id="AEBack"></div>
+    <div id="audioButtonContainer">
+        <div class="pauseDisplay playpauseDisplay">
 
-              </div>
-              <div class="playBut playPauseBut">
+        </div>
+        <div class="playDisplay playpauseDisplay">
 
-              </div>
-            </div>
-          </div>
+        </div>
+    </div>
+</div>
 
-          <audio id="Perc" class="audio" src="http://www.maplelab.net/virtualPianist/AmplitudeEnv/Perc.mp3"></audio>
-          <audio id="Flat" class="audio" src="http://www.maplelab.net/virtualPianist/AmplitudeEnv/Flat.mp3"></audio>
-          <audio id="Rev" class="audio" src="http://www.maplelab.net/virtualPianist/AmplitudeEnv/Rev.mp3"></audio>
-  </body>
+<audio id="Perc" class="audio" src="https://maplelab.net/tools/AmpEnvelopeDemo/elements/audio/Perc.mp3"></audio>
+<audio id="Flat" class="audio" src="https://maplelab.net/tools/AmpEnvelopeDemo/elements/audio/Flat.mp3"></audio>
+<audio id="Rev" class="audio" src="https://maplelab.net/tools/AmpEnvelopeDemo/elements/audio/Rev.mp3"></audio>
+</body>
 
 </html>
