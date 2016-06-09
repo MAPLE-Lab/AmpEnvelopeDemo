@@ -1,3 +1,13 @@
+// Amplitude Envelope Demo
+// Small audio/visual demo of Amplitude Envelopes
+// MAPLE Lab, McMaster
+//
+//
+// Written by Kyle Gauder
+// Git Repo: https://github.com/gauderkd/AmpEnvelopeDemo
+//
+///////////////////////////////////////////////////////
+//
 function play(audioID) {
 
 
