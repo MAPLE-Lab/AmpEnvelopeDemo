@@ -10,7 +10,8 @@ Git Repo: https://github.com/gauderkd/AmpEnvelopeDemo
 CSS*/
 #AmpEnvVisualizer {
     position: relative;
-    height: 300px;
+    height: 320px;
+    width: 530px;
 }
 
 #AEContent {
